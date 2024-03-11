@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('reservations', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('event_id')->constrained('evenements');
+            $table->enum('status' , ['accepted' , 'awaiting' , 'old'])->default('awaiting');
             $table->timestamps();
         });
     }
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('reservations');
     }
 };

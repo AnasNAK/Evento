@@ -6,5 +6,25 @@
 @tailwind utilities;
 
 
+.sign:hover .sign-in,
+.sign:hover span {
+    color: #000000; 
+    background-color: #ffffff;
+    transition: background-color 0.3s ease; 
+}
+
+.sign:hover span svg {
+    fill: #000000;
+    transition: fill 0.3s ease;
+}
+
+@keyframes colorChange {
+    0% { color: #ffffff; } 
+    100% { color: #000000; }
+}
 
 
+.sign:hover .sign-in,
+.sign:hover span svg {
+    animation: colorChange 0.3s ease forwards; 
+}

@@ -49,20 +49,20 @@
                     </p>
                 </div>
             </div>
-            <div>
+            {{-- <div>
                 <img src="{{ asset('assets/img/o (2).png') }}" class="w-[400px] mt-16" alt="">
-                <div class="flex flex-coll justify-center ">
-                    <p class=" cursor-pointer inline-block bg-black text-4xl px-4 py-2 rounded-full font-bold text-white hover:bg-gray-800 transition-colors duration-300">
+                <div class="flex flex-coll justify-center sign">
+                    <p class="sign-in cursor-pointer inline-block bg-black text-3xl px-4 py-2 rounded-full font-bold text-white hover:bg-gray-800 transition-colors duration-300">
                         sign-in
                     </p>
                     <span class="flex items-center justify-center bg-black rounded-full w-16 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6 w-6 fill-current text-white ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6 w-6 fill-current text-white">
                             <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                         </svg>
                     </span>
                 </div>
-
-            </div>
+            </div> --}}
+            
 
             <div class=" mt-14 w-2/3">
                 <h2 class="text-6xl font-bold w-full" style="font-family:initial">
@@ -73,6 +73,11 @@
         </div>
 
     </section>
+
+    <div>
+
+        
+    </div>
 
 
     {{-- <div class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
